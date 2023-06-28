@@ -43,7 +43,9 @@
       </div>
 
       <!-- details-div start here -->
-      <div class="py-8 px-[35px] lg:max-w-[60%] lg:ml-[-65px] bg-white">
+      <div
+        class="py-8 px-[35px] lg:max-w-[60%] lg:ml-[-65px] bg-white relative"
+      >
         <h1
           class="text-VeryDarkGrayishBlue font-bold mb-4 text-[1rem] lg:text-xl"
         >
@@ -71,23 +73,30 @@
             src="images/icon-share.svg"
             alt="share"
             class="ml-auto w-4 h-4 hover:cursor-pointer"
+            id="share"
           />
         </div>
         <!-- --------- active mobile state here ------------- -->
         <div
           id="share-social-media"
-          class="hidden ml-[-36px] mr-[-36px] flex bg-VeryDarkGrayishBlue text-[#939fb5] justify-start items-center py-4 rounded-b-lg px-8 relative"
+          class="hidden lg:hidden absolute bottom-[-33px] ml-[-36px] mr-[-36px] flex bg-VeryDarkGrayishBlue text-[#939fb5] justify-start items-center py-4 rounded-b-lg px-8 relative"
         >
           <p class="uppercase tracking-[3px] mr-4">share</p>
-          <img
-            src="images/icon-facebook.svg"
-            alt="icon-facebook logo"
-            class="mr-4"
-          />
-          <img src="images/icon-twitter.svg" alt="twitter logo" class="mr-4" />
-          <img src="images/icon-pinterest.svg" alt="Pinterest logo" />
-          <div class="rounded-full bg-[#70839b] p-2 ml-auto" id="share">
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+          <a href="https://facebook.com">
+            <img
+              src="images/icon-facebook.svg"
+              alt="icon-facebook logo"
+              class="mr-4"
+            />
+          </a>
+          <a href="https://twitter.com"
+            ><img src="images/icon-twitter.svg" alt="twitter logo" class="mr-4"
+          /></a>
+          <a href="https://pinterest.com"
+            ><img src="images/icon-pinterest.svg" alt="Pinterest logo"
+          /></a>
+          <div class="rounded-full bg-[#70839b] p-2 ml-auto" id="active-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"  class="hover:cursor-pointer" title="go back">
               <path
                 fill="#ffffff"
                 d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"

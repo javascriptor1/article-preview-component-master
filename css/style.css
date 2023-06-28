@@ -652,6 +652,10 @@ main {
   color: hsl(217 19% 35% / var(--tw-text-opacity));
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 1024px) {
   .lg\:ml-\[-65px\] {
     margin-left: -65px;

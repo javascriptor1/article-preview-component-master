@@ -423,7 +423,7 @@ video {
 }
 
 main {
-  box-shadow: 0 6px 0px 3px hsl(210, 46%, 95%);
+  box-shadow: 0 6px 19px 6px #dbe4ee;
 }
 
 *, ::before, ::after {

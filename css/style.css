@@ -426,6 +426,19 @@ main {
   box-shadow: 0 6px 19px 6px #dbe4ee;
 }
 
+#share-social-media-desktop::after {
+  content: "";
+  border: 1rem solid transparent;
+  border-top: 1rem solid hsl(217, 19%, 35%);
+  position: absolute;
+  /* The location is -rem from the bottom due to applied padding on the div py-4.
+    we then have to add 1 more rem so it fits in the right location 
+    */
+  bottom: -2rem;
+  transform: translate(-50%);
+  left: 50%;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -534,12 +547,36 @@ main {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .bottom-\[-33px\] {
   bottom: -33px;
+}
+
+.bottom-\[85px\] {
+  bottom: 85px;
+}
+
+.right-\[-70px\] {
+  right: -70px;
+}
+
+.right-\[-75px\] {
+  right: -75px;
+}
+
+.right-\[-77px\] {
+  right: -77px;
+}
+
+.right-\[-78px\] {
+  right: -78px;
+}
+
+.right-\[-79px\] {
+  right: -79px;
+}
+
+.right-\[-80px\] {
+  right: -80px;
 }
 
 .mb-4 {
@@ -608,6 +645,10 @@ main {
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-\[250px\] {
+  width: 250px;
 }
 
 .flex-row {
@@ -730,13 +771,43 @@ main {
   color: rgb(147 159 181 / var(--tw-text-opacity));
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:ml-\[-65px\] {
     margin-left: -65px;
+  }
+
+  .lg\:inline-block {
+    display: inline-block;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:hidden {
@@ -759,8 +830,22 @@ main {
     flex-direction: row;
   }
 
+  .lg\:overflow-visible {
+    overflow: visible;
+  }
+
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .lg\:duration-300 {
+    transition-duration: 300ms;
   }
 }
